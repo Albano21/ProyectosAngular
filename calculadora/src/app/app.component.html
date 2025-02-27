@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Aplicacion Calculadora</h1>
+  <br />
+  <app-formulario (resultadoCalculado)="mostrarResultado($event)">
+  </app-formulario>
+  <br />
+  <app-resultado [resultado]="resultado"></app-resultado>
+</div>
