@@ -1,0 +1,22 @@
+<div class="contenedor limpiarEstilos">
+    <div class="ingreso">
+        <h2 class="ingreso_titulo">Ingresos</h2>
+           <app-ingreso  
+           *ngFor="let ingreso of ingresos; let i = index"
+           [ingreso]="ingreso"
+           [i]="i"> 
+        </app-ingreso>
+           
+    </div>
+    
+    
+    <div class="egreso">
+        <h2 class="egreso_titulo">Egresos</h2>
+           <app-egreso 
+           *ngFor="let egreso of egresos; let i = index"
+           [egreso]="egreso"
+           [i]="i">
+        </app-egreso>
+            
+    </div>
+</div>
